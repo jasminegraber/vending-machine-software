@@ -45,16 +45,16 @@ public class Importer {
             String[] splitList = currentString.split("\\|");
 
             if(splitList[3].equals("Chip")) {
-                Chip chip = new Chip(splitList[1], splitList[2]);
+                Item chip = new Chip(splitList[1], splitList[2]);
                 inventoryMap.put(splitList[0], chip);
             } else if (splitList[3].equals("Candy")) {
-                Candy candy = new Candy(splitList[1], splitList[2]);
+                Item candy = new Candy(splitList[1], splitList[2]);
                 inventoryMap.put(splitList[0], candy);
             } else if (splitList[3].equals("Drink")) {
-                Drink drink = new Drink(splitList[1], splitList[2]);
+                Item drink = new Drink(splitList[1], splitList[2]);
                 inventoryMap.put(splitList[0], drink);
             } else if (splitList[3].equals("Gum")) {
-                Gum gum = new Gum(splitList[1], splitList[2]);
+                Item gum = new Gum(splitList[1], splitList[2]);
                 inventoryMap.put(splitList[0], gum);
             }
 
